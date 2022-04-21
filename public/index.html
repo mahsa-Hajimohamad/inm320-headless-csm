@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INM320</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container-fluid row fs-5 h-screen m-0 p-0">
+        <aside class="bg-sidebar col-sm-2 p-0 text-secondary d-flex flex-column flex-shrink-0">
+            <div class="d-flex align-items-center text-secondary text-decoration-none mx-auto py-4 mb-3">
+                <img class="logo" src="./assets/img/logo.png" alt="">
+                <span class="fs20 fw-normal graydark ps-2">Dashboard Kit</span>
+            </div>
+            <ul id="left-sidebar" class="nav nav-pills flex-column mb-auto">
+                <hr>
+                <li class="list-item">
+                    <a href="#" class="text-secondary text-decoration-none">
+                        <div class="ms-3 py-2 row">
+                            <div class="menu-item-icon text-center text-sm-start">
+                                <img class="pb-1 me-1" src="./assets/img/settings.png" alt="Settings">
+                                <div class="d-inline fs16 pt-1 graydark">
+                                    Settings
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="text-secondary text-decoration-none">
+                        <div class="ms-3 py-2 row">
+                            <div class="menu-item-icon text-center text-sm-start">
+                                <img class="pb-1 me-1" src="./assets/img/sub.png" alt="Subscription">
+                                <div class="d-inline fs16 pt-1 graydark">
+                                    Subscription
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                </li>
+            </ul>
+        </aside>
+        <section class="col-sm-10 d-flex flex-column align-items-center bg-tertiary">
+            <div class="row p-3 justify-content-center">
+                <nav class="mb-2 mt-3 row ">
+                    <div class="black col-sm-6 fs24 fw-bold">Overview</div>
+                    <div class="col-sm-6">
+                        <div class="row profile-items justify-content-end">
+                            <div class="nav-icon"><img src="./assets/img/search.png" alt=""></div>
+                            <div class="nav-icon"><img src="./assets/img/notif.png" alt=""></div>
+                            <div id="username" class="nav-profile-name me-2 py-1 black fs14 fw-normal text-center">
+                            </div>
+                            <div class="nav-profile-pic"><img id="profile-pic" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <header id="ticket-stats" class="row px-1">
+                </header>
+                <div class="row p-3">
+                    <div class="col-sm-8 card  p-0">
+                        <div class="row">
+                            <figure class="card-body mt-2 ms-4">
+                                <div class="row">
+                                    <div class="card-title fs20 black">Today’s trends</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col gray fs12 ">as of 25 May 2019, 09:41 PM</div>
+                                    <div class="col-3 col-sm-2 gray fs12">
+                                        <img class="me-2" src="./assets/img/today.png" alt="Today">
+                                        Today
+                                    </div>
+                                    <div class="col-4 col-sm-2 gray fs12">
+                                        <img class="me-2" src="./assets/img/yesterday.png" alt="Yesterday">
+                                        Yesterday
+                                    </div>
+                                </div>
+                            </figure>
+                            <div class="row">
+                                <img class="img-fluid mx-2 px-3 py-2" src="./assets/img/graph.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="graph-stats" class="col-sm-4 px-0">
+                    </div>
+                </div>
+                <section class="row d-flex align-items-center gx-1">
+                    <div class="col-sm-6 p-3">
+                        <div id="unresolved-tickets" class="card rounded-4">
+                            <div class="card-body p-0">
+                                <div class="row px-4 mx-0 pt-4 pb-0">
+                                    <dic class="col text-start black fs20 fw-bold">Unresolved tickets</dic>
+                                    <dic class="col-4 fs14 p-1 primary text-end">View details</dic>
+                                </div>
+                                <div class="row px-4 mx-0 pb-4">
+                                    <dic class="fs12">Group: <b>Support</b></dic>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-3">
+                        <div id="tasks" class="card rounded-4">
+                            <div class="card-body p-0">
+                                <div class="row px-4 mx-0 pt-4 pb-0">
+                                    <dic class="col black fs20 fw-bold">Task</dic>
+                                    <dic class="col fs14 p-1 primary text-end">View All</dic>
+                                </div>
+                                <div class="row px-4 mx-0 pb-4">
+                                    <dic class="col fs12">Today</dic>
+                                </div>
+                            </div>
+                            <div class="border-1 border-bottom px-4 mx-0 py-3 row">
+                                <div class="col text-start fs14 graylight">Create new task</div>
+                                <div class="col-4 d-flex justify-content-end"><img class="img-fluid"
+                                        src="assets/img/add.png" alt="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-3">
+                        <div id="blog-posts" class="card rounded-4">
+                            <div class="card-body p-0">
+                                <div class="row px-4 mx-0 pt-4 pb-0">
+                                    <dic class="col text-start black fs20 fw-bold">Blog Posts</dic>
+                                    <dic class="col-4 fs14 p-1 primary text-end">View details</dic>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-3">
+                        <div id="priorities" class="card rounded-4">
+                            <div class="card-body p-0">
+                                <div class="row px-4 mx-0 pt-4 pb-0">
+                                    <dic class="col text-start black fs20 fw-bold">Most Important Priorities</dic>
+                                    <dic class="col-4 fs14 p-1 primary text-end">View details</dic>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!-- Modals Section Start-->
+    <div class="modal fade" id="modal_unresolved" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Unresolved tasks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    There are 60 Unresolved tasks left
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_overdue" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Overdue tasks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    There are 16 Overdue tasks left
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_open" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Open tasks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    There are 43 Open tasks left
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_onhold" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">On Hold tasks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    There are 64 On Hold tasks left
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals Section End-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

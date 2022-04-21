@@ -1,0 +1,165 @@
+{
+  "siteName": "Company DashBoard",
+  "userName": "Jones Ferdinand",
+  "userPic": "./assets/img/profile.png",
+  "leftSidebar": [
+    {
+      "url": "#",
+      "title": "Overview",
+      "icon": "overview.png",
+      "isActive": 1
+    },
+    {
+      "url": "#",
+      "title": "Tickets",
+      "icon": "tickets.png",
+      "isActive": 0
+    },
+    {
+      "url": "#",
+      "title": "Ideas",
+      "icon": "ideas.png",
+      "isActive": 0
+    },
+    {
+      "url": "#",
+      "title": "Contacts",
+      "icon": "contacts.png",
+      "isActive": 0
+    },
+    {
+      "url": "#",
+      "title": "Agents",
+      "icon": "agents.png",
+      "isActive": 0
+    },
+    {
+      "url": "#",
+      "title": "Articles",
+      "icon": "articles.png",
+      "isActive": 0
+    }
+  ],
+  "ticketStats": [
+    {
+      "url": "/",
+      "modal_id": "modal_unresolved",
+      "title": "Unresolved",
+      "count": 60
+    },
+    {
+      "url": "/",
+      "modal_id": "modal_overdue",
+      "title": "Overdue",
+      "count": 18
+    },
+    {
+      "url": "/",
+      "modal_id": "modal_open",
+      "title": "Open",
+      "count": 43
+    },
+    {
+      "url": "/",
+      "modal_id": "modal_onhold",
+      "title": "On Hold",
+      "count": 64
+    }
+  ],
+  "graphStats": [
+    {
+      "title": "Resolved",
+      "value": 449
+    },
+    {
+      "title": "Received",
+      "value": 426
+    },
+    {
+      "title": "Average first response time",
+      "value": "33m"
+    },
+    {
+      "title": "Average response time",
+      "value": "3h 8m"
+    },
+    {
+      "title": "Resolution within SLA",
+      "value": "94%"
+    }
+  ],
+  "unresolvedTickets": [
+    {
+      "title": "Waiting on Feature Request",
+      "value": 4238
+    },
+    {
+      "title": "Awaiting Customer Response",
+      "value": 1005
+    },
+    {
+      "title": "Awaiting Developer Fix",
+      "value": 914
+    },
+    {
+      "title": "Pending",
+      "value": 381
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Finish ticket update",
+      "tag": "Urgent",
+      "class": "bg-yellow white",
+      "checked": 0
+    },
+    {
+      "title": "Create new ticket example",
+      "tag": "New",
+      "class": "bg-green white",
+      "checked": 0
+    },
+    {
+      "title": "Update ticket report",
+      "tag": "Default",
+      "class": "bg-graylightest gray",
+      "checked": 1
+    }
+  ],
+  "priorities": [
+    {
+      "title": "Web design assignment",
+      "priority": 1
+    },
+    {
+      "title": "Video assignment",
+      "priority": 2
+    },
+    {
+      "title": "UX assignment",
+      "priority": 5
+    },
+    {
+      "title": "Business assignment",
+      "priority": 7
+    }
+  ],
+  "blogPost": [
+    {
+      "title": "How to code like a pro",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    },
+    {
+      "title": "Design like a master",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    },
+    {
+      "title": "Best 2022 design",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    },
+    {
+      "title": "What is UI/UX",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    }
+  ]
+}

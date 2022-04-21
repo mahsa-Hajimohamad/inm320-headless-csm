@@ -1,0 +1,166 @@
+//  colors
+$primary: #3751ff;
+$secondary: #363740;
+$tertiary: #f7f8fc;
+$white: #fff;
+$black: #252733;
+$yellow: #fec400;
+$green: #29cc97;
+$gray: #9fa2b4;
+$graylight: #c5c7cd;
+$graylightest: #f0f1f7;
+$graydark: #a4a6b3;
+$light: #dde2ff;
+$border: #dfe0eb;
+
+// fonts
+$base-font-size: 2;
+$scale: 2;
+
+@for $i from 1 through 30 {
+  .fs#{$base-font-size+($scale * $i)} {
+    font-size: $base-font-size + ($scale * $i) + px;
+  }
+}
+
+:root {
+  --bs-font-sans-serif: "Mulish", sans-serif;
+}
+a {
+  text-decoration: none;
+  //   display: block;
+}
+// color sets
+.primary {
+  color: $primary;
+}
+.bg-primary {
+  background-color: $primary;
+}
+.bd-primary {
+  border-color: $primary;
+}
+.sidebar {
+  color: $secondary;
+}
+.bg-sidebar {
+  background-color: $secondary;
+}
+
+.tertiary {
+  color: $tertiary;
+}
+.bg-tertiary {
+  background-color: $tertiary;
+}
+.white {
+  color: $white;
+}
+.bg-white {
+  background-color: $white;
+}
+.black {
+  color: $black;
+}
+.bg-black {
+  background-color: $black;
+}
+.yellow {
+  color: $yellow;
+}
+.bg-yellow {
+  background-color: $yellow;
+}
+.green {
+  color: $green;
+}
+.bg-green {
+  background-color: $green;
+}
+.gray {
+  color: $gray;
+}
+.bg-gray-sidebar {
+  background-color: rgb(159 162 180 / 8%);
+}
+.bg-gray {
+  background-color: $gray;
+}
+.graylight {
+  color: $graylight;
+}
+.bg-graylight {
+  background-color: $graylight;
+}
+.graylightest {
+  color: $graylightest;
+}
+.bg-graylightest {
+  background-color: $graylightest;
+}
+.graydark {
+  color: $graydark;
+}
+.bg-graydark {
+  background-color: $graydark;
+}
+.light {
+  color: $light;
+}
+.bg-light {
+  background-color: $light;
+}
+// boders
+
+.border {
+  border: 1px solid $border;
+}
+.bg-border {
+  background-color: $border;
+}
+// width and height
+.h-screen {
+  height: 100vh;
+}
+.w-screen {
+  width: 100vw;
+}
+.rounded-4 {
+  border-radius: 8px !important;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+}
+// template classes
+.list-item {
+  height: 54px;
+}
+.card-item:hover {
+  border: 1px solid $primary;
+}
+.card-item:hover * {
+  color: $primary;
+}
+.opacity-8 {
+  opacity: 8%;
+}
+.nav-icon {
+  width: 20px;
+}
+.nav-profile-name {
+  width: 130px;
+}
+.nav-profile-pic {
+  width: 45px;
+}
+.profile-items div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% !important;
+}

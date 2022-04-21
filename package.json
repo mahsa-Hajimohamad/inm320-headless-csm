@@ -1,0 +1,18 @@
+{
+  "name": "inm320-headless-csm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "lite-server --baseDir=\"public\"",
+    "watch": "sass --watch scss/index.scss public/assets/css/index.css",
+    "start": "npm-run-all --parallel watch dev"
+  },
+  "author": "Mahsa Hajimohamaedebrahim",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.9"
+  }
+}
